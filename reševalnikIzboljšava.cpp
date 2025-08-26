@@ -69,7 +69,6 @@ bool hasArith(std::bitset<MAX_N> &set, const std::vector<int> &setElements, int 
 bool isSatur(__uint128_t f, int alphaSize, std::bitset<MAX_N> &set, std::vector<int> &setElements){
     __uint128_t mask = __uint128_t(1) << (n-alphaSize);
     mask--;
-    //std::cout << std::bitset<64>(mask).to_string() << std::endl;
     if((f & mask) != mask) return false;
 
     for(int i = 0; i < alphaSize; i++){
@@ -186,8 +185,6 @@ int main() {
             std::cout << std::endl;
             n++;
         }else{
-            //std::cout << "Not found.\n";
-            //break;
             k++;
         }
     }
