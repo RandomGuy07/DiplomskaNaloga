@@ -147,7 +147,7 @@ int main() {
 
     
     n = 4;
-    k = 3;
+    k = 2;
 
     auto startTime = std::chrono::high_resolution_clock::now();
 
